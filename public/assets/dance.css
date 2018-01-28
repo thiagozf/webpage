@@ -1,0 +1,171 @@
+/* C to the S to the S */
+@import 'keyframe.css';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #f9f9f9 url('subtle_dots.png') repeat;
+    color: #222;
+
+    font: 15px/24px "Bitstream Vera Sans Mono", "Anonymous Pro", "Consolas", monospace;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25);
+    letter-spacing: -0.01em;
+}
+
+ul.content {
+    list-style: none;
+    position: absolute;
+    left: 130px;
+    top: 40%;
+    width: 500px;
+    margin-top: -62px;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+#first-line {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    background: #111;
+    color: #fff;
+}
+
+a:hover {
+    background: #84a403;
+    color: #fff;
+}
+
+.typing {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    text-indent: -999em;
+    background: #ccc;
+    -webkit-animation: flick 1s infinite;
+    -moz-animation: flick 1s infinite;
+    -ms-animation: flick 1s infinite;
+    -o-animation: flick 1s infinite;
+    animation: flick 1s infinite;
+}
+
+.arrow {
+    background: url('arrow.png') no-repeat;
+    width: 235px;
+    height: 110px;
+    top: 40%;
+    margin-top: 195px;
+    position: absolute;
+    left: -108px;
+    -webkit-animation: arrow 32s 1;
+    -moz-animation: arrow 32s 1;
+    -ms-animation: arrow 32s 1;
+    -o-animation: arrow 32s 1;
+    animation: arrow 32s 1;
+}
+
+.social {
+    position: absolute;
+    left: 130px;
+    top: 40%;
+    margin-top: 218px;
+    -webkit-animation: logo 32s 1;
+    -moz-animation: logo 32s 1;
+    -ms-animation: logo 32s 1;
+    -o-animation: logo 32s 1;
+    animation: logo 32s 1;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url('social_links.png') no-repeat;
+    text-decoration: none;
+    border: 0;
+}
+
+.social li a.github {
+    width: 32px;
+    height: 32px;
+    background-position: -15px -15px;
+}
+
+.social li a.linkedin {
+    width: 32px;
+    height: 32px;
+    background-position: -77px -15px;
+}
+
+.social li a.rss {
+    width: 32px;
+    height: 32px;
+    background-position: -139px -15px;
+}
+
+.social li a.twitter {
+    width: 32px;
+    height: 32px;
+    background-position: -201px -15px;
+}
+
+.social li a.whatsapp {
+    width: 24px;
+    height: 24px;
+    background-position: -175px -5px;
+}
+
+/*.dollar:before {
+    content: '$';
+    padding-right: 20px;
+
+    color: #50657b;
+}*/
+
+@media (max-width: 550px) {
+    body {
+        font-size: 15px;
+        min-height: 530px;
+    }
+    ul.content {
+        width: 80%;
+        top: 20%;
+        left: 10%;
+        min-width: 290px;
+    }
+    div.social-links {
+        top: inherit;
+        bottom: 20px;
+        margin-top: 0px;
+        left: 10%;
+    }
+    div.social-links ul {
+        width: 235px;
+        left: 10%;
+    }
+    li.facebook-like {
+        display: none;
+    }
+    .arrow {
+        display: none !important;
+    }
+}

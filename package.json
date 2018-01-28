@@ -1,0 +1,23 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "thiagozf's webpage",
+  "scripts": {
+    "lint": "node lint.js",
+    "deploy": "s3-deploy ./public/** --cwd ./public --region us-east-1 --bucket thiagozf.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagozf/webpage.git"
+  },
+  "keywords": [
+    "thiagozf",
+    "webpage",
+    "contact"
+  ],
+  "author": "thiagozf",
+  "license": "MIT",
+  "devDependencies": {
+    "html5-lint": "^0.3.0"
+  }
+}
